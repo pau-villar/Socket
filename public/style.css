@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* ---------- Login ---------- */
+#login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+}
+
+.error {
+  margin: 0;
+  color: #b00020;
+}
+
+/* ---------- Chat ---------- */
+#chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+}
+
+#chat[hidden],
+#login[hidden] {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 12px;
+  background: #6441a5;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+#user-name {
+  flex: 1;
+  text-align: center;
+}
+
+#status {
+  flex: 1;
+  text-align: right;
+}
+
+/* ---------- Mensajes ---------- */
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: #e8eefc;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.message p {
+  margin: 4px 0 0;
+}
+
+/* ---------- Formulario de envío ---------- */
+#message-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+}
+
+#message-input {
+  flex: 1;
+  min-width: 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: #6441a5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
